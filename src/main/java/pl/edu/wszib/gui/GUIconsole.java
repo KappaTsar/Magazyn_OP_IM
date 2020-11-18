@@ -1,23 +1,13 @@
 package pl.edu.wszib.gui;
 
 import pl.edu.wszib.database.DBInterface;
-import pl.edu.wszib.database.SQLDatabase;
 import pl.edu.wszib.model.Product;
 
 import java.util.Scanner;
 
 public class GUIconsole {
-    private static final GUIconsole instance = new GUIconsole();
-
     private Scanner scanner = new Scanner(System.in);
-    private DBInterface dataBase = SQLDatabase.getInstance();
-
-    private GUIconsole() {
-    }
-
-    public static GUIconsole getInstance() {
-        return instance;
-    }
+    public DBInterface dataBase;
 
     public void showMainMenu() {
         System.out.println("1. Umiesc towar\n"+

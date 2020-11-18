@@ -8,15 +8,7 @@ import java.util.List;
 
 
 public class SQLDatabase implements DBInterface{
-    private static final SQLDatabase instance = new SQLDatabase();
     private List<Product> productList = new ArrayList<Product>();
-
-    private SQLDatabase() {
-    }
-
-    public static SQLDatabase getInstance() {
-        return instance;
-    }
 
     public void placeProduct(String prod_name, int prod_quan) {
         String prod_id = DigestUtils.md5Hex(prod_name);
