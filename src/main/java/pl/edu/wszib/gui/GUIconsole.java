@@ -25,7 +25,7 @@ public class GUIconsole {
                            "3. Zobac zawartosc magazynu\n" +
                            "4. Wyjdz");
 
-        String choose = scanner.nextLine();
+        String choose = scanner.next();
         switch (choose) {
             case "1":
                 placeProd();
@@ -50,7 +50,7 @@ public class GUIconsole {
 
     private void placeProd(){
         System.out.println("Podaj nazwu towara:");
-        String nameProd = scanner.nextLine();
+        String nameProd = scanner.next();
         System.out.println("Podaj ilosc towara:");
         int quanProd = scanner.nextInt();
 
@@ -59,7 +59,7 @@ public class GUIconsole {
 
     private void takeProd(){
         System.out.println("Podaj nazwu towara :");
-        String nameProd = scanner.nextLine();
+        String nameProd = scanner.next();
         System.out.println("Podaj ilosc towara:");
         int quanProd = scanner.nextInt();
 
