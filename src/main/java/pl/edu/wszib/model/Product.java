@@ -1,18 +1,17 @@
 package pl.edu.wszib.model;
 
-import java.util.UUID;
 public class Product {
-    private UUID id;
+    private String id;
     private String name;
     private int quan;
 
-    public Product(UUID id, String name, int quan) {
+    public Product(String id, String name, int quan) {
         this.id = id;
         this.name = name;
         this.quan = quan;
     }
 
-    public UUID getId(){
+    public String getId(){
         return this.id;
     }
 
@@ -30,6 +29,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "product_id: " + id + " w/ name: " + name + " in quantity: " + quan;
+        return "Product o nazwie {" + name + "} w ilosci " + quan;
     }
 }
